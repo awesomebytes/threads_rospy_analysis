@@ -14,12 +14,18 @@ Which counts the folders in `/proc/PID_OF_PROCESS/tasks`. Every folder is a thre
 
 # The conclusion is:
 
-Topics: 
-  Publisher: 1 thread per connection (0 not connected)
-  Subscriber: 1 thread per connection (0 not connected)
-Action servers:
-  Clients: 3 thread per connection (0 not connected)
-  Servers: 4 thread per connection (2 not connected)
-Services:
-  Clients: 0 threads
-  Servers: 0 threads
+## Topics:
+Publisher: 1 thread per connection (0 not connected)
+
+Subscriber: 1 thread per connection (0 not connected)
+  
+## Action servers:
+Clients: 3 thread per connection (0 not connected)
+  
+Servers: 4 thread per connection (2 not connected)
+  
+## Services:
+Clients: 0 threads
+  
+Servers: 0 threads
+  
