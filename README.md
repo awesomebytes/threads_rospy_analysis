@@ -29,3 +29,17 @@ Clients: 0 threads
   
 Servers: 0 threads
   
+
+# As of CPU load
+Some (not very meaningful) tests on my machine were performed with the conclusions:
+
+## Topics: 
+No extra CPU (just when actually doing something with them)
+  
+## Action servers:
+Clients: No extra CPU
+  
+Servers: 2-3 % extra for every server
+  
+## Services: 
+No extra CPU

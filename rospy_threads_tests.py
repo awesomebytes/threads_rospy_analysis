@@ -207,6 +207,25 @@ if __name__ == '__main__':
     # Services: 0 threads, not for clients or servers
 
 
+##### SOME CPU TESTS
+
+    # topics dont add CPU load (idle node 7-8% CPU) (only when doing stuff)
+
+    # action servers add +3% CPU per action server (clients only when doing stuff)
+
+    # Tested data:
+    # 10 AS server+client CPU load = 39%
+    # 5 AS server 23% CPU (23 - 8 / 5 = +3% CPU per AS)
+    # 10 AS server 38% CPU (+3% CPU per AS, confirmed)
+    # 1 AS server + 2-3% CPU (10% CPU)
+    # 1 AS client + 0% CPU
+
+    # services dont add CPU load (same as topics)
+
+    # node = SpawnStuff(0, 0, # topics pub, sub
+    #                   0, 0, # action servers clients, servers
+    #                   0, 10) # services clients, servers
+
 
     rospy.spin()
 
